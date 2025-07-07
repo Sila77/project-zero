@@ -1,0 +1,42 @@
+/* Add styles for the main content area */
+.main-content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+/* Add space below the filter bar */
+.filter-bar {
+    margin-bottom: 30px;
+}
+
+/* Style for the category filter buttons */
+.category-filters button {
+    margin-right: 10px;
+    margin-bottom: 10px; /* Add margin bottom for wrapping on small screens */
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    border-radius: 20px; /* Pill-shaped buttons */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    font-weight: 500;
+}
+
+.category-filters button.active {
+    background-color: #f04e23;
+    color: white;
+    border-color: #f04e23;
+}
+
+.category-filters button:hover:not(.active) {
+    background-color: #eee;
+    border-color: #bbb;
+}
+
+/*
+  The `.product-grid` class with `display: grid` is removed because
+  we are now using React Bootstrap's <Row> and <Col> components for the grid.
+  The <Row> component is a flex container, and its layout is controlled
+  by the props on the <Col> components (e.g., xs, sm, md, lg) and
+  gap utilities (e.g., className="g-4") on the <Row> itself.
+*/
