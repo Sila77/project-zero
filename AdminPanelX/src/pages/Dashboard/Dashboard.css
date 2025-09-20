@@ -1,0 +1,130 @@
+.dashboard-controls-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.date-range-buttons .btn {
+  border-color: #4a5a76;
+}
+
+.chart-card {
+  background-color: var(--secondary-bg);
+  border: 1px solid #4a5a76;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card--graph {
+  height: 420px;
+}
+
+.chart-header {
+  margin-bottom: 1.5rem;
+  flex-shrink: 0;
+}
+
+.chart-header h4 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chart-container {
+  flex-grow: 1; 
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card {
+  background-color: var(--secondary-bg);
+  border: 1px solid #4a5a76;
+  border-radius: 12px;
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  height: 110px;
+}
+
+.stat-card--clickable {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+.stat-card--clickable:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-color);
+}
+
+.stat-card__icon {
+  font-size: 2rem;
+  color: var(--accent-color);
+  background-color: rgba(136, 132, 216, 0.1);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat-card__details { flex: 1; }
+.stat-card__title {
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.stat-card__value {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+.stat-card__trend {
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.stat-card__trend.positive { color: #4ade80; }
+.stat-card__trend.negative { color: #f87171; }
+
+.recent-orders-table-container,
+.modal-table-container {
+  overflow-y: auto;
+  height: 100%;
+}
+
+.recent-orders-table-container {
+    max-height: 350px;
+}
+
+.recent-orders-table {
+  --bs-table-bg: transparent;
+  --bs-table-hover-bg: #3a4a63;
+  --bs-table-color: var(--text-primary); 
+  --bs-table-hover-color: var(--text-primary);
+}
+.recent-orders-table th, .recent-orders-table td {
+  border-color: #4a5a76 !important;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.recent-orders-table thead th {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.modal-content {
+  background-color: var(--secondary-bg) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid #4a5a76;
+  border-radius: 12px;
+}
+.modal-header { border-bottom: 1px solid #4a5a76 !important; }
+.modal-body { padding: 1.25rem; }
+.modal-table-container { max-height: 60vh; }

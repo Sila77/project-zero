@@ -1,0 +1,17 @@
+.lookups-tabs .nav-link {
+    color: var(--text-secondary);
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+
+.lookups-tabs .nav-link:hover {
+    border-color: #4a5a76;
+    border-bottom: none;
+}
+
+.lookups-tabs .nav-link.active {
+    color: var(--accent-color);
+    background-color: transparent;
+    border-color: #4a5a76 #4a5a76 transparent;
+}

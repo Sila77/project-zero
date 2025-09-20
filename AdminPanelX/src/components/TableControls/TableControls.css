@@ -1,0 +1,13 @@
+.table-controls-wrapper {
+    background-color: var(--secondary-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    border: 1px solid #344258;
+    margin-bottom: 1.5rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    flex-wrap: wrap; 
+}

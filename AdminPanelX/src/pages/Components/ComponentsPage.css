@@ -1,0 +1,123 @@
+.page-header-container {
+    flex-grow: 1;
+}
+
+.table-container {
+    background-color: var(--secondary-bg);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.custom-table {
+    --bs-table-bg: var(--secondary-bg);
+    --bs-table-striped-bg: #344258;
+    --bs-table-hover-bg: #3a4a63;
+    border: none !important;
+    width: 100%;
+}
+
+.custom-table th, 
+.custom-table td {
+    border-bottom: 1px solid #4a5a76 !important;
+    vertical-align: middle;
+    padding: 1rem !important;
+}
+
+.custom-table th {
+    cursor: pointer;
+    user-select: none;
+    font-weight: 600;
+    color: var(--text-secondary);
+    border-bottom: 2px solid #4a5a76 !important;
+    white-space: nowrap;
+}
+
+.custom-table td {
+    word-wrap: break-word;
+}
+
+.truncate-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+    margin: -0.25rem -0.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.truncate-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.status-dot-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 6px;
+    transition: background-color 0.2s;
+}
+
+.status-dot-container:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.status-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.status-dot-active {
+    background-color: #22c55e;
+}
+
+.status-dot-inactive {
+    background-color: #ef4444;
+}
+
+.clickable-image { 
+    cursor: pointer; 
+    transition: transform 0.2s ease-in-out; 
+}
+.clickable-image:hover { 
+    transform: scale(1.1); 
+}
+
+.image-modal .modal-content { 
+    background-color: transparent; 
+    border: none; 
+}
+.image-modal .modal-header { 
+    border-bottom: none; 
+}
+.image-modal .btn-close { 
+    filter: invert(1) grayscale(100%) brightness(200%); 
+    font-size: 1.5rem; 
+}
+.image-modal .modal-body { 
+    padding: 0; 
+    text-align: center; 
+}
+.fullscreen-image { 
+    max-width: 100%; 
+    max-height: 80vh; 
+    border-radius: 8px; 
+}
+
+.pagination-btn {
+    --bs-btn-color: var(--text-secondary);
+    --bs-btn-border-color: #4a5a76;
+    --bs-btn-hover-bg: var(--secondary-bg);
+    --bs-btn-hover-border-color: var(--accent-color);
+    --bs-btn-hover-color: var(--text-primary);
+}
+.pagination-btn:disabled {
+    --bs-btn-disabled-color: #4a5a76;
+    --bs-btn-disabled-border-color: #344258;
+}

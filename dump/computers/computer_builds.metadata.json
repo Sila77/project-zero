@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"8f28d3b0df484782b1c149e5809fd4fa","collectionName":"computer_builds","type":"collection"}

@@ -1,0 +1,1 @@
+{"indexes":[{"v":{"$numberInt":"2"},"key":{"_id":{"$numberInt":"1"}},"name":"_id_"}],"uuid":"b04f42680cf84e5f8d234bdc3f681729","collectionName":"lookup_sockets","type":"collection"}

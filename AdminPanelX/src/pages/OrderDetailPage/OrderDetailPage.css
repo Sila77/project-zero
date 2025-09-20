@@ -1,0 +1,19 @@
+/* --- โซน Layout หลักของหน้า --- */
+.order-detail-layout {
+  align-items: flex-start;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 2fr 1fr;
+}
+
+.order-main-content,
+.order-sidebar-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.order-sidebar-content {
+  position: sticky;
+  top: 1.5rem;
+}

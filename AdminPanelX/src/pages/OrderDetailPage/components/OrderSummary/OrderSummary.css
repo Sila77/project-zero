@@ -1,0 +1,90 @@
+/* --- โซน Card Style ทั่วไป --- */
+.detail-card {
+  background-color: var(--secondary-bg);
+  border: 1px solid #4a5a76;
+  border-radius: 12px;
+}
+
+.detail-card .card-header {
+  background-color: #344258;
+  border-bottom: 1px solid #4a5a76;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+
+/* --- โซน Layout ภายใน Card --- */
+.detail-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.detail-row {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+
+/* --- โซน Label และ Value --- */
+.detail-label {
+  align-items: center;
+  color: var(--text-secondary);
+  display: flex;
+  font-weight: 500;
+  gap: 0.75rem;
+}
+
+.detail-label svg {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+}
+
+.detail-value {
+  color: var(--text-primary);
+  font-weight: 500;
+  text-align: right;
+}
+
+
+/* --- โซนที่อยู่จัดส่ง --- */
+.detail-item-full-width .detail-label {
+  margin-bottom: 0.5rem;
+}
+
+.address-block {
+  background-color: #344258;
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0.75rem;
+  white-space: pre-wrap;
+  width: 100%;
+}
+
+
+/* --- โซนรูปภาพ (อาจใช้ร่วมกับ Component อื่น) --- */
+.image-header-cell {
+  text-align: center;
+  width: 90px;
+}
+
+.component-image-cell {
+  padding: 0.5rem !important;
+  text-align: center;
+  vertical-align: middle;
+  width: 90px;
+}
+
+.component-image {
+  background-color: #fff;
+  border-radius: 4px;
+  max-height: 60px;
+  max-width: 60px;
+  object-fit: contain;
+  padding: 2px;
+}

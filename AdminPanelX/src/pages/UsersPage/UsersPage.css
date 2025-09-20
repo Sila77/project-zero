@@ -1,0 +1,55 @@
+/* --- โซน Avatar ในตาราง --- */
+.table-avatar {
+  border-radius: 50%;
+  height: 45px;
+  object-fit: cover;
+  width: 45px;
+}
+
+.table-avatar-placeholder {
+  align-items: center;
+  background-color: #4a5a76;
+  border-radius: 50%;
+  color: var(--text-primary);
+  display: flex;
+  font-size: 1.2rem;
+  font-weight: 600;
+  height: 45px;
+  justify-content: center;
+  text-transform: uppercase;
+  width: 45px;
+}
+
+
+/* --- โซน Status Badge --- */
+.status-badge {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.4em 0.8em;
+}
+
+
+/* --- โซนปุ่ม Action --- */
+.action-btn {
+  font-weight: 500;
+  min-width: 75px;
+}
+
+.action-btn:disabled,
+.action-btn:disabled:hover {
+  background-color: #3e43962e;
+  border-color: #4a5a76;
+  color: #6c757d;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.action-btn-edit:hover {
+  background-color: var(--primary-accent, #6870fa);
+  color: white;
+}
+
+.action-btn-delete:hover {
+  background-color: var(--danger-accent, #f04438);
+  color: white;
+}
